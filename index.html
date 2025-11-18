@@ -11,22 +11,25 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__menu"></nav>
+      <nav class="header__menu">
       <ul class="header__links-list">
         <li class="header__links-list-item header__links-list-item_no-bullit">
         <a href="#0" class="header__link_active">Главная</a>
         </li>
+         <li class="header__links-list-item">
+                <a href="#0" class="header__link">посмотреть лоты</a>
+            </li>
         <li class="header__links-list-item">
           <a href="#0" class="header__link">Об аукционе</a> 
         </li>
       </ul>
       </nav>
       <a class="header__logo">
-        <img class="header__logo-link" 
+        <img class="header__logo-image" 
         src="images/logo-black.svg"
         alt="логотип оно тебе надо">
       </a>
-      <address>
+      <address class="header__address">
          <a href="tel:+99995555555">+9 999 555 5555</a>
          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
          <p>наб. Принсенграхт 263-265, Амстердам</p>
@@ -34,7 +37,7 @@
     </header>
     <main>
       <section class="cover">
-      <h1 class="cover_tilte">
+      <h1 class="cover__titlte">
         <span class="aligned-text aligned-text_left">оно</span>
         <span class="aligned-text aligned-text_center">тебе</span>
         <span class="aligned-text aligned-text_right">надо</span>
@@ -69,16 +72,16 @@
         </li>
         <li class="lots__card-list-item">
           <a href="#" class="card-link">
-            <arcticle class="card card_type_picture">
+            <article class="card card_type_picture">
               <div class="overlay"></div>
               <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
               <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, рёбер, спиралей и прочих нужных вещей. Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
 
-            </arcticle>
+            </article>
           </a>
         </li>
     </ul>
-    <a href="#" class="lots__look-,ore-link">Посмотреть больше</a>
+    <a href="#" class="lots__look-more-link">Посмотреть больше</a>
 
       </section>
       <section class="about">
@@ -105,11 +108,19 @@
             <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
             <p>наб. Принсенграхт 263-265, Амстердам</p>
         </address>
-        <nav class="footer__menu">
-          <ul class="footer__menu-list">
-            <li class="footer__menu-list-item">
-              <a href="#" class="footer__menu-link">об аукционе</a>
-
+         <nav class="footer__menu">
+            <ul class="footer__menu-list">
+                <li class="footer__menu-list-item">
+                    <a href="#" class="footer__menu-link footer__menu-link_active">главная</a>
+                </li>
+                <li class="footer__menu-list-item">
+                    <a href="#" class="footer__menu-link">посмотреть лоты</a>
+                </li>
+                <li class="footer__menu-list-item">
+                    <a href="#" class="footer__menu-link">об аукционе</a>
+                </li>
+            </ul>
+        </nav>
             </li>
           </ul>
         </nav>
@@ -122,7 +133,7 @@
               </a>
           </li>
           <li class="footer__social-list-item">
-            <a href-="#" class="footer__social-link">
+            <a href="#" class="footer__social-link">
               <img class="footer__social-icon"
               src="images/vk.svg"
               alt="лого vk">
@@ -130,7 +141,7 @@
           </li>
           <li class="footer__social-list-item">
              <a href="#" class="footer__social-link">
-              <img class="footer-social-icon"
+              <img class="footer__social-icon"
               src="images/pinterest.svg"
               alt="лого pinterest">
              </a>
