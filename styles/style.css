@@ -162,7 +162,7 @@
     padding: 50px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-size: cover;
     background-position: center;
 }
@@ -199,7 +199,7 @@
     text-decoration: underline;
     line-height: 1.2;
     text-underline-offset: 3px;
-    margin: 0;
+    margin: 0 0 20px 0;
 }
 
 .card__text {
