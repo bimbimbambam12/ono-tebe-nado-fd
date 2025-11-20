@@ -3,15 +3,15 @@ Classi toze izmenil bili konflikti s html oshibki po pixelam toze ubral*/
 .header {
   display:flex;
   grid-template-columns: 1fr min-content 1fr;
+  justify-content: space-between;
   align-items: center;
   width: 1100px;
   padding: 92px 50px 96px;
-  justify-content: space-between;
 }
 
-.header__logo { 
+.header__logo {
+  display: block; 
   width: 135px;
-  display: block;
 }
 
 .header__menu {
@@ -43,12 +43,12 @@ Classi toze izmenil bili konflikti s html oshibki po pixelam toze ubral*/
 }
 
 .header__address {
-  font-size: 18px;
-  line-height: 1.35;
-  font-style: normal;
-  max-width: 240px;
   display: flex;
   flex-direction: column;
+  max-width: 240px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.35;
   text-align: left;
 }
 
@@ -58,6 +58,7 @@ Classi toze izmenil bili konflikti s html oshibki po pixelam toze ubral*/
 }
 
 .cover {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,28 +66,27 @@ Classi toze izmenil bili konflikti s html oshibki po pixelam toze ubral*/
     background-image: url('../images/cover.jpg');
     background-position: center;
     background-size: cover;
-    position: relative;
 }
 
 .cover .overlay {
-    background-color: rgba(0,0,0,0.6);
     position: absolute;
     inset: 0;
     z-index: 1;
+    background-color: rgba(0,0,0,0.6);
 }
 
 .cover__title {
+    z-index: 2;
     display: flex;
     flex-direction: column;
     gap: 17px;
     margin: 165px 50px 0;
-    z-index: 2;
-    text-transform: uppercase;
     color: white;
     font-family: Raleway, Arial, sans-serif;
     font-weight: bold;
     font-size: 100px;
     letter-spacing: 30px;
+    text-transform: uppercase;
 }
 
 .aligned-text_left {
@@ -105,93 +105,93 @@ Classi toze izmenil bili konflikti s html oshibki po pixelam toze ubral*/
 }
 
 .cover__description {
+    z-index: 2;
     display: flex;
     margin-top: 105px;
-    font-family: Raleway, Arial, sans-serif;
     color: white;
+    font-family: Raleway, Arial, sans-serif;
     text-transform: uppercase;
-    z-index: 2;
 }
 
 .cover__description-text {
-    font-size: larger;
-    word-spacing: 17px;
-    letter-spacing: 2px;
-    padding-right: 107px;
-    white-space: nowrap;
     align-self: center;
+    padding-right: 107px;
+    font-size: larger;
+    letter-spacing: 2px;
+    word-spacing: 17px;
+    white-space: nowrap;
 }
 
 .bet-button {
+    align-self: center;
     width: 256px;
     height: 51px;
     border: 1px solid white;
-    background-color: transparent;
+    padding: 12px 32px;
     color: white;
-    text-transform: uppercase;
     font-family: Raleway, Arial, sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
-    padding: 12px 32px;
+    text-transform: uppercase;
+    background-color: transparent;
     cursor: pointer;
-    align-self: center;
 }
 
 .lots {
     position: relative;
-    margin: 180px 24px 120px;
     max-width: 1052px;
+    margin: 180px 24px 120px;
 }
 
 .lots__heading {
+    padding-left: 40px;
     font-family: Raleway, Arial, sans-serif;
     font-weight: bold;
     font-size: 40px;
     text-transform: uppercase;
-    padding-left: 40px;
 }
 
 .lots__card-list {
     display: grid;
     grid-template-columns: repeat(3, 334px);
-    list-style: none;
     gap: 25px;
     padding: 27px 0 30px 0;
+    list-style: none;
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-width: 334px;
     min-height: 596px;
-    font-family: Raleway, Arial, sans-serif;
     color: white;
-    position: relative;
-    background-size: cover;
+    font-family: Raleway, Arial, sans-serif;
     background-position: center;
+    background-size: cover;
 }
 
 .card .overlay {
     position: absolute;
     inset: 0;
-    background-color: rgba(0,0,0,0.3);
     z-index: 1;
+    background-color: rgba(0,0,0,0.3);
 }
 
 .card__title {
+    z-index: 2;
     padding: 48px 40px 0 40px;
     font-weight: bold;
     font-size: 22px;
-    text-transform: uppercase;
     text-decoration: underline;
-    z-index: 2;
+    text-transform: uppercase;
 }
 
 .card__text {
+    z-index: 2;
     padding: 0 40px 48px 40px;
     font-size: 20px;
-    z-index: 2;
 }
 
 .card_type_film {
@@ -214,50 +214,50 @@ Classi toze izmenil bili konflikti s html oshibki po pixelam toze ubral*/
 }
 
 .about {
-    margin: 120px 24px 160px;
-    max-width: 1052px;
     display: grid;
     grid-template-columns: 334px 1fr;
     gap: 26px;
+    max-width: 1052px;
+    margin: 120px 24px 160px;
 }
 
 .about__logo {
-    width: 240px;
-    height: 240px;
-    border-radius: 50%;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 240px;
+    height: 240px;
     margin: 35px 0 320px 47px;
+    border-radius: 50%;
+    background-color: black;
 }
 
 .about__logo-image {
+    align-items: center;
     width: 148px;
     height: 114px;
-    align-items: center
 }
 
 .about__title {
+    margin: 136px 400px 100px 0;
     font-family: Raleway, Arial, sans-serif;
     font-weight: bold;
     font-size: 40px;
     text-transform: uppercase;
-    margin: 136px 400px 100px 0;
 }
 
 .about__text {
-    font-family: Raleway, Arial, sans-serif;
-    font-size: 20px;
     margin-bottom: 24px;
     overflow-wrap: break-word;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 20px;
 }
 
 .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: start;
     justify-items: center;
+    align-items: start;
     margin-bottom: 82px;
 }
 
@@ -271,16 +271,16 @@ Classi toze izmenil bili konflikti s html oshibki po pixelam toze ubral*/
     flex-direction: column;
     align-items: center;
     gap: 4px;
-    list-style: none;
     padding-top: 5px;
+    list-style: none;
 }
 
 .footer__social-list {
     display: flex;
     justify-content: space-between;
-    width: 240px;
     gap: 48px;
-    list-style: none;
-    margin-left: 20px;
+    width: 240px;
     margin-top: 1px;
+    margin-left: 20px;
+    list-style: none;
 }
