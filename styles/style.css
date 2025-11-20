@@ -10,8 +10,8 @@ Classi toze izmenil bili konflikti s html oshibki po pixelam toze ubral*/
 }
 
 .header__logo {
-   display: block; 
-   width: 135px;
+    display: flex;
+    margin-right: 165px;  
 }
 
 .header__menu {
