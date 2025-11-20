@@ -1,7 +1,7 @@
 /*изменил grid, flex, z-index position i paddingi
 Classi toze izmenil bili konflikti s html oshibki po pixelam toze ubral*/
 .header {
-  display:flex;
+  display:grid;
   grid-template-columns: 1fr min-content 1fr;
   justify-content: space-between;
   align-items: center;
@@ -10,8 +10,8 @@ Classi toze izmenil bili konflikti s html oshibki po pixelam toze ubral*/
 }
 
 .header__logo {
-  display: block; 
-  width: 135px;
+   display: block; 
+   width: 135px;
 }
 
 .header__menu {
